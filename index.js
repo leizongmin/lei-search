@@ -1,2 +1,9 @@
+/**
+ * lei-search
+ *
+ * @author Zongmin Lei <leizongmin@gmail.com>
+ */
 
-module.exports = require('./lib/reds');
+exports = module.exports = require('./lib/reds');
+
+exports.version = require('./package').version;

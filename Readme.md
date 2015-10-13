@@ -1,29 +1,28 @@
-# cn-search
-- [![NPM version](https://badge.fury.io/js/cn-search.png)](http://badge.fury.io/js/cn-search)
-- [![Dependencies Status](https://david-dm.org/sxyizhiren/cn-search.png)](https://david-dm.org/sxyizhiren/cn-search)
-- [![Build Status](https://travis-ci.org/sxyizhiren/cn-search.png?branch=master)](https://travis-ci.org/sxyizhiren/cn-search)
-- [![Coverage Status](https://coveralls.io/repos/sxyizhiren/cn-search/badge.png?branch=master&service=github)](https://coveralls.io/github/sxyizhiren/cn-search?branch=master)
-- [![NPM Stats](https://nodei.co/npm/cn-search.png?downloads=true&stars=true)](https://npmjs.org/package/cn-search)
-- [![NPM Downloads](https://nodei.co/npm-dl/cn-search.png?months=9)](https://npmjs.org/package/cn-search)
+# lei-search
 
-  ch-search , a light-weight chinese search engine based on reds, english support also.
+[![NPM version](https://badge.fury.io/js/lei-search.png)](http://badge.fury.io/js/lei-search)
+[![Dependencies Status](https://david-dm.org/leizongmin/lei-search.png)](https://david-dm.org/leizongmin/cn-search)
+[![Build Status](https://travis-ci.org/leizongmin/lei-search.png?branch=master)](https://travis-ci.org/leizongmin/lei-search)
+[![Coverage Status](https://coveralls.io/repos/leizongmin/lei-search/badge.png?branch=master&service=github)](https://coveralls.io/github/leizongmin/lei-search?branch=master)
 
-  https://github.com/tj/reds
-    
-  
-## Installation
+[![NPM Stats](https://nodei.co/npm/lei-search.png?downloads=true&stars=true)](https://npmjs.org/package/lei-search)
+[![NPM Downloads](https://nodei.co/npm-dl/lei-search.png?months=9)](https://npmjs.org/package/lei-search)
 
-      $ npm install cn-search
+轻量级的中文搜索引擎，基于Redis
 
-## Example
+本项目原始代码来自 https://github.com/tj/reds 和 https://github.com/sxyizhiren/cn-search
 
-  the same to reds
+## 安装
 
-###usage
+```bash
+$ npm install lei-search
+```
+
+## 使用方法
 
 ```js
-var searcher=require('cn-search');
-var search = searcher.createSearch('pets');	
+var searcher=require('lei-search');
+var search = searcher.createSearch('pets');
 var strs = [];
 strs.push('Tobi wants four dollars');
 strs.push('Mustachio is a cat');
@@ -55,7 +54,31 @@ search
 		});
 	});
 
+```
 
-// basic usage is same to reds : https://github.com/tj/reds
+## License
+
+```
+The MIT License (MIT)
+
+Copyright (c) 2015 Zongmin Lei <leizongmin@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
 
